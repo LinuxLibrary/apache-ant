@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<project name="Test project 1" default="info">
+	<property name="antenv" value="Below are the details of Apache-ANT environment"/>
+	<target name="info">
+		<echo>${antenv}</echo>
+		<echo>${ant.version}</echo>
+		<echo>Apache ANT Home : ${ant.home}</echo>
+		<echo>Basedir : ${basedir}</echo>
+		<echo>ANT build file : ${ant.file}</echo>
+		<echo>ANT Java version : ${ant.java.version}</echo>
+		<echo>Project name : ${ant.project.name}</echo>
+		<echo>Default target : ${ant.project.default-target}</echo>
+		<echo>Invoked targets : ${ant.project.invoked-targets}</echo>
+		<echo>ANT core library : ${ant.core.lib}</echo>
+		<echo>ANT Library directory : ${ant.library.dir}</echo>
+	</target>
+</project>
