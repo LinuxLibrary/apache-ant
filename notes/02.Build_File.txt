@@ -2,7 +2,9 @@ ANT BUILD FILE :
 ----------------
 
 The XML element project has three attributes :
+
 Attributes	Description
+---------------------------------------------------
 name		The Name of the project. (Optional)
 
 default		The default target for the build script. A project may contain any number of targets. 
@@ -18,7 +20,9 @@ the package target, the package target may have a dependency on the compile targ
 Dependencies are denoted using the depends attribute.
 
 The target element has the following attributes:
+
 Attributes	Description
+-------------------------------------------------
 name		The name of the target (Required)
 
 depends		Comma separated list of all targets that this target depends on. (Optional)
