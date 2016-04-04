@@ -25,6 +25,9 @@ then i need to do like below.
 # ant -f test2.xml infoenv
 # ant -f test2.xml infoproj
 
+If you want to run all the targets at a time you need to invoke all the targets separating by space while running the build.
+# ant -f test2.xml infoenv infoproj
+
 Targets can have dependencies on other targets. For example, a deploy target may have a dependency on 
 the package target, the package target may have a dependency on the compile target and so forth. 
 Dependencies are denoted using the depends attribute.
