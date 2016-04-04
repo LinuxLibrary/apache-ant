@@ -18,4 +18,5 @@
 		<echo>ANT build file : ${ant.file}</echo>
 	</target>
 	<target name="main" depends="infoenv,infoproj"/>
+	<target name="all" depends="infoenv,infoproj"/>
 </project>
