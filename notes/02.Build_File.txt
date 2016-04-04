@@ -15,6 +15,16 @@ basedir		The base directory (or) the root folder for the project. (Optional)
 A target is a collection of tasks that you want to run as one unit. 
 In our example, we have a simple target to provide an informational message to the user.
 
+If we have multiple targets in a project we can't build all at a time. In such case we need to mention our
+default target in the defaults or else we need to set the value of defaults to "all" and need to mention
+the target name while running the build.
+
+For ex: I have two targets in my project say "infoenv" and "infoproj". If i want to run a specific target 
+then i need to do like below.
+
+# ant -f test2.xml infoenv
+# ant -f test2.xml infoproj
+
 Targets can have dependencies on other targets. For example, a deploy target may have a dependency on 
 the package target, the package target may have a dependency on the compile target and so forth. 
 Dependencies are denoted using the depends attribute.
