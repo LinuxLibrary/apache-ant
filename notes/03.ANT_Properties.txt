@@ -1,0 +1,38 @@
+# ANT PROPERTIES :
+------------------
+
+Ant uses the property element which allows you to specify properties.
+This allows the properties to be changed from one build to another or from one environment to another.
+
+By default, Ant provides the following pre-defined properties that can be used in the build file:
+Properties			Description
+------------------------------------------------------------------------------
+ant.file			The full location of the build file.
+ant.version			The version of the Apache Ant installation.
+basedir				The basedir of the build, as specified in the basedir attribute of the project element.
+ant.java.version		The version of the JDK that is used by Ant.
+ant.project.name		The name of the project, as specified in the name atrribute of the project element.
+ant.project.default-target	The default target of the current project.
+ant.project.invoked-targets	Comma separated list of the targets that were invoked in the current project.
+ant.core.lib			The full location of the Ant jar file.
+ant.home			The home directory of Ant installation.
+ant.library.dir			The home directory for Ant library files - typically ANT_HOME/lib folder.
+
+Ant also makes the system properties (Example: file.separator) available to the build file.
+
+In addition to the above, the user can define additional properties using the property element. 
+The following example shows how to define a property called sitename:
+
+------- EXAMPLE -------
+
+<?xml version="1.0"?>
+<project name="Hello World Project" default="info">
+
+   <property name="sitename" value="www.tutorialspoint.com"/>
+   <target name="info">
+      <echo>Apache Ant version is ${ant.version} - You are at ${sitename} </echo>
+   </target>
+
+</project>
+
+------- EXAMPLE -------
