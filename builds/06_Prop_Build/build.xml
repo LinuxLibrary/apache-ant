@@ -22,6 +22,6 @@
 	<echo>Site URL	: ${siteurl}</echo>
 </target>
 
-<target name="all" depends="buildinfo,blog,site"/>
+<target name ="all" depends="buildinfo,blog,site"/>
 
 </project>
