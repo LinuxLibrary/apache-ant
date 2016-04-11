@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="Test build with custom properties from a properties file" default="all">
+
+<property file="build.properties"/>
+
+<target name="buildinfo">
+	<echo>Current build version : ${build.version}</echo>
+	<echo>${ant.version}</echo>
+	<echo>Build File : ${ant.file}</echo>
+	<echo>Properties File : ${basedir}/build.properties</echo>
+</target>
+
+<target name="blog">
+	<echo>Author 	: ${author}</echo>
+	<echo>Blog Name	: ${blogname}</echo>
+	<echo>Blog URL 	: ${blogurl}</echo> 
+</target>
+
+<target name="site">
+	<echo>Author	: ${author}</echo>
+	<echo>Site Name	: ${sitename}</echo>
+	<echo>Site URL	: ${siteurl}</echo>
+</target>
+
+<target name="all" depends="buildinfo,blog,site"/>
+
+</project>
