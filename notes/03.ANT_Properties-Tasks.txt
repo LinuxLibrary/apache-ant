@@ -28,9 +28,9 @@ The following example shows how to define a property called sitename:
 <?xml version="1.0"?>
 <project name="Hello World Project" default="info">
 
-   <property name="sitename" value="www.tutorialspoint.com"/>
+   <property name="blog" value="http://linux-library.blogspot.in"/>
    <target name="info">
-      <echo>Apache Ant version is ${ant.version} - You are at ${sitename} </echo>
+      <echo>Apache Ant version is ${ant.version} - You are at ${blog} </echo>
    </target>
 
 </project>
